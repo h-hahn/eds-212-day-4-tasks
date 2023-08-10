@@ -37,3 +37,8 @@ ggplot(diamonds, aes(x = carat, y = price)) +
 ggplot(diamonds, aes(x = carat)) +
   geom_histogram(color = "darkgrey", fill = "lightpink2")
 ```
+
+```{r}
+ggplot(diamonds, aes(x = clarity, y = price)) +
+  geom_boxplot(fill = "palegreen3", color = "grey")
+```
