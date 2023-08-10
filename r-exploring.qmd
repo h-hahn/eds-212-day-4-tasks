@@ -1,0 +1,39 @@
+---
+title: "r-exploring"
+format: html
+---
+
+```{r}
+library(tidyverse)
+library(skimr)
+library(GGally)
+```
+
+```{r}
+names(diamonds)
+
+dim(diamonds)
+
+summary(diamonds)
+
+head(diamonds)
+
+tail(diamonds)
+
+skimr::skim(diamonds)
+```
+
+```{r}
+ggpairs(data = diamonds)
+```
+
+```{r}
+ggplot(diamonds, aes(x = carat, y = price)) +
+  geom_point(color = "cornflowerblue") +
+  theme_light()
+```
+
+```{r}
+ggplot(diamonds, aes(x = carat)) +
+  geom_histogram(color = "darkgrey", fill = "lightpink2")
+```
